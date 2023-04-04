@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUDRA</title>
+    <link rel="shortcut icon" href="\img\rudra.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7f85005135.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <figure class="header__figure" id="header__figure">
+        <img
+          src="\img\logo1.png"
+          alt="Logo"
+          width="1080"
+          height="1350"
+          title="Logo"
+        />
+        <figcaption class="offscreen" id="offscreen">My Logo!</figcaption>
+      </figure>
+      <nav
+        class="header__navigation"
+        id="header__navigation"
+        aria-label="primary-navigation"
+      >
+        <ul id="sidemenu">
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-xmark" id="menu" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" id="menu" onclick="openMenu()"></i>
+      </nav>
+    </header>
+    <main class="main about" id="about">
+      <article class="main__article about__article" id="about__article">
+        <section class="about__section" id="about_section">
+          <h1 class="about__h1" id="about__h1">About Me</h1>
+          <figure class="about__figure" id="about__figure">
+            <img
+              src="\img\dp.jpeg"
+              alt="Me"
+              width="403"
+              height="193"
+              title="Me"
+            />
+            <figcaption class="offscreen" id="offscreen">
+              A Picture of Me
+            </figcaption>
+          </figure>
+          <p class="about__p" id="about__p">
+            My name is Rudra Prasad Behera . I am currently a student, studying
+            Computer Science Engineering in NIT ROURKELA
+          </p>
+        </section>
+        <section class="about__section about__tabs" id="about__section">
+          <h2
+            class="about__h2 active-link"
+            id="about__h2"
+            onclick="openTab('skills')"
+          >
+            My Skills
+          </h2>
+          <h2 class="about__h2" id="about__h2" onclick="openTab('education')">
+            My Education
+          </h2>
+        </section>
+        <section class="about__tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>GENERAL PROGRAMMING</span> <br />C, C++, HTML,CSS</li>
+            <li><span>LANGUAGES</span> <br />English, Hindi, Odia</li>
+            <li><span>Web Development</span> <br />Web App Development</li>
+          </ul>
+        </section>
+        <section class="about__tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2021-2025(Expected)</span> <br />Bachelors In Computer
+              Science Engineering, NIT ROURKELA
+            </li>
+            <li>
+              <span>2018-2020</span> <br />INTERMEDIATE From BJB autonomous
+              college, Bhubaneswar
+            </li>
+            <li>
+              <span>2018</span> <br />MATRICULATION From S.S.V.M ramahari
+              nagar,Berhampur
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
